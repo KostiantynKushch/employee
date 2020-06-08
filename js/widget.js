@@ -14,7 +14,6 @@ function getData() {
 }
 
 function showEmployeeList(data) {
-
 	data.forEach(emp => {
 		empList.innerHTML += liTmpl.replace(/{{name}}/gi, emp.name)
 			.replace(/{{status}}/gi, emp.inoffice ? 'in' : 'out');
